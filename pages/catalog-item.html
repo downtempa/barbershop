@@ -1,126 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Набор для путушествий &laquo;Baxter of Californiа&raquo;</title>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Набор для путушествий &laquo;Baxter of Californiа&raquo;</title>
-</head>
-
-<body>
-<!--  хэдэр    -->
-    <header class="main-header">
-        <div class="conteiner clearfix">
-            <nav class="main-navigation">
+    <body>
+<!--  хэдэр  -->
+        <header class="main-header">
+            <div class="conteiner clearfix">
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="../index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Информацмя</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс-лист</a>
+                        </li>
+                        <li class="active">
+                            <a href="catalog.html">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <a href="#" class="login">Вход</a>
+                </div>
+            </div>
+        </header>
+<!--  основной блок  -->
+        <main class="container">
+            <h1>Набор для путушествий &laquo;Baxter of Californiа&raquo;</h1>
+<!--  крошки  -->
+            <nav class="breadcrumbs">
                 <ul>
                     <li>
-                        <a href="../index.html">Главная</a>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li>
-                        <a href="#">Информацмя</a>
+                        <a href="#">Магазин</a>
                     </li>
                     <li>
-                        <a href="#">Новости</a>
+                        <a href="#">Средства для ухода</a>
                     </li>
-                    <li>
-                        <a href="#">Прайс-лист</a>
-                    </li>
-                    <li>
-                        <a href="catalog.html">Магазин</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
+                    <li class="current-section">
+                        <a href="index.html">Набор для путушествий &laquo;Baxter of Californiа&raquo;</a>
                     </li>
                 </ul>
             </nav>
-            <div class="user-block">
-                <a href="#" class="login">Вход</a>
-            </div>
-        </div>
-    </header>
-<!--    основной блок   -->
-    <main class="container">
-        <h1>Набор для путушествий &laquo;Baxter of Californiа&raquo;</h1>
-<!--    крошки    -->
-        <nav class="breadcrumbs">
-            <ul>
-                <li>
-                    <a href="index.html">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Магазин</a>
-                </li>
-                <li>
-                    <a href="#">Средства для ухода</a>
-                </li>
-                <li class="current-section">
-                    <a href="index.html">Набор для путушествий &laquo;Baxter of Californiа&raquo;</a>
-                </li>
-            </ul>
-        </nav>
-<!--   обертка товара с изображением и описанием     -->
-        <div class="item-wrapper clearfix">
-<!--   блок изображений       -->
-            <div class="item-images clearfix">
-                <div class="item-big-image">
-                    <img src="http://placehold.it/150x100" alt="big-item">
+<!--   обертка товара с изображением и описанием  -->
+            <div class="item-wrapper clearfix">
+<!--  блок изображений
+    тут видимо скрипт какой-то будет, обернул сделал li>a>img  -->
+                <div class="item-images clearfix">
+                    <div class="item-big-image">
+                        <img src="http://placehold.it/150x100" alt="big-item">
+                    </div>
+                    <div class="item-preview-images clearfix">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                     <img src="http://placehold.it/150x100" alt="preview-item">
+                                </a>
+                            </li>
+                            <li>
+                                 <a href="#">
+                                    <img src="http://placehold.it/150x100" alt="preview-item">
+                                </a>
+                            </li>
+                            <li> 
+                                <a href="#">
+                                    <img src="http://placehold.it/150x100" alt="preview-item">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="item-preview-images clearfix">
+<!--  блок с описанием  -->
+<!--  что лучше clearfix или overflow hidden?  -->
+                <div class="item-description clearfix">
+                    <p>Есть в наличии</p>
+                    <p class="item-article">Актикул: dexter-ae</p>
+                    <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+<!--  не знаю как лучше сделать цену с кнопкой - отдельным блоком или позиционировать все отдельно?  -->
+                    <p class="product-price">750 руб.</p>
+                    <a href="#" class="btn buy-accept">Купить</a>
+<!--  блок с набором оставить в общем блоке или вынести с классом  -->
+                    <h2>В набор входят:</h2>
                     <ul>
-                        <li>
-                            <img src="http://placehold.it/150x100" alt="preview-item">
-                        </li>
-                        <li>
-                            <img src="http://placehold.it/150x100" alt="preview-item">
-                        </li>
-                        <li>
-                            <img src="http://placehold.it/150x100" alt="preview-item">
-                        </li>
+                        <li>Средство для умывания (50 мл)</li>
+                        <li>Увлажняющий крем (50 мл)</li>
+                        <li>Крем для бритья (50 мл)</li>
+                        <li>Крем после бритья, шампунь (50 мл)</li>
+                        <li>Удобная кожаная косметичка</li>
                     </ul>
                 </div>
             </div>
-<!--    блок с описанием        -->
-<!--    что лучше clearfix или overflow hidden?       -->
-            <div class="item-description clearfix">
-                <p>Есть в наличии</p>
-                <p class="item-article">Актикул: dexter-ae</p>
-                <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-<!--        не знаю как лучше сделать цену с кнопкой - отдельным блоком или позиционировать все отдельно?        -->
-                <p class="product-price">750 руб.</p>
-                <a href="#" class="btn buy-accept">Купить</a>
-<!--        блок с набором оставить в общем блоке или вынести с классом        -->
-                <h2>В набор входят:</h2>
-                <ul>
-                    <li>Средство для умывания (50 мл)</li>
-                    <li>Увлажняющий крем (50 мл)</li>
-                    <li>Крем для бритья (50 мл)</li>
-                    <li>Крем после бритья, шампунь (50 мл)</li>
-                    <li>Удобная кожаная косметичка</li>
-                </ul>
+        </main>
+<!--  подвал  -->
+        <footer class="main-footer">
+            <div class="container clearfix">
+                <section class="footer-contacts">
+                    Барбершоп «Бородинский»
+                    <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+                    <br>
+                    <a href="#">Как нас найти?</a>
+                    <br>телефон: +7 (495) 666-02-66
+                </section>
+                <section class="footer-social">
+                    <p>Давайте дружить!</p>
+                    <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+                    <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+                    <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+                </section>
+                <section class="footer-copyright">
+                    <p>Дизайн сайта:</p>
+                    <a href="#" class="btn">htmlacademy.ru</a>
+                </section>
             </div>
-        </div>
-    </main>
-<!--   подвал    -->
-    <footer class="main-footer">
-        <div class="container clearfix">
-            <section class="footer-contacts">
-                Барбершоп «Бородинский»
-                <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-                <br>
-                <a href="#">Как нас найти?</a>
-                <br>телефон: +7 (495) 666-02-66
-            </section>
-            <section class="footer-social">
-                <p>Давайте дружить!</p>
-                <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-                <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-                <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-            </section>
-            <section class="footer-copyright">
-                <p>Дизайн сайта:</p>
-                <a href="#" class="btn">htmlacademy.ru</a>
-            </section>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>   
