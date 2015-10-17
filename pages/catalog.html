@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Магазин Барбершопа «Бородинский»</title>
+</head>
+
+<body>
+<!--  хэдэр    -->
+    <header class="main-header">
+        <div class="conteiner clearfix">
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="../index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Информацмя</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Прайс-лист</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-block">
+                <a href="#" class="login">Вход</a>
+            </div>
+        </div>
+    </header>
+<!-- основной блок-->
+    <main class="container">
+        <h1>Средства для ухода</h1>
+<!--    крошки    -->
+        <nav class="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Магазин</a>
+                </li>
+<!--   нужно ли делать третий элемент ссылкой? мы через стили сделаем её неактивной? -->
+                <li class="current-section">
+                    <a href="#">Средства для ухода</a>
+                </li>
+            </ul>
+        </nav>
+<!-- обертка каталога       -->
+        <div class="catalog clearfix">
+<!-- колонка поиска         -->
+            <div class="catalog-search">
+<!--    Норма ли одинаковые название id и value?
+        Атрибуты button, еще нужны какие-нибудь?
+        Порядок атрибутов в input - критично? -->
+                <form action="/echo" method="post">
+                    <h2>Производители:</h2>
+                    <input type="checkbox" id="baxter" value="baxter-of-califotnia" checked>
+                    <label for="baxter">Baxter of Califotnia</label>
+                    <input type="checkbox" id="natty" value="natty">
+                    <label for="natty">Mr Natty</label>
+                    <input type="checkbox" id="suavecito" value="suavecito" checked>
+                    <label for="suavecito">Suavecito</label>
+                    <input type="checkbox" id="malin-goetz" value="malin-goetz">
+                    <label for="malin-goetz">Malin+Goetz</label>
+                    <input type="checkbox" id="murray" value="murray">
+                    <label for="murray">Murray's</label>
+                    <input type="checkbox" id="crew" value="american-crew" checked>
+                    <label for="crew">American Crew</label>
+                    <h2>Группы товаров:</h2>
+                    <input type="radio" name="item-groups" value="shaving" id="shaving">
+                    <label for="shaving">Бритвенные принадлежности</label>
+                    <input type="radio" name="item-groups" value="means-for-care" id="means-for-care" checked>
+                    <label for="means-for-care">Средства для ухода</label>
+                    <input type="radio" name="item-groups" value="accessories" id="accessories">
+                    <label for="accessories">Аксессуары</label>
+                    <button type="submit" class="btn">Показать</button>
+                </form>
+            </div>
+<!--     колонка с товаром       -->
+            <div class="catalog-products clearfix">
+               <!--         div или списком inline-block?
+                            отступ в цене стилезуем?            -->
+                <div class="catalog-product">
+                    <div class="catalog-product-image">
+                        <img src="http://placehold.it/150x100" alt="продукт">
+                    </div>
+                    <div class="catalog-product-description">
+                        <a href="catalog-item.html" class="product-name">Набор для путешествий &laquo;Baxter of Californiа&raquo;</a>
+                        <p class="product-price">2900 руб.</p>
+                        <a href="#" class="btn buy-accept">Купить</a>
+                    </div>
+                </div>
+                
+                <div class="catalog-product">
+                    <div class="catalog-product-image">
+                        <img src="http://placehold.it/150x100" alt="продукт">
+                    </div>
+                    <div class="catalog-product-description">
+                        <a href="#" class="product-name">Увлажняющий кондиционер &laquo;Baxter of Californiа&raquo;</a>
+                        <p class="product-price">750 руб.</p>
+                        <a href="#" class="btn buy-accept">Купить</a>
+                    </div>
+                </div>
+                
+                <div class="catalog-product">
+                    <div class="catalog-product-image">
+                        <img src="http://placehold.it/150x100" alt="продукт">
+                    </div>
+                    <div class="catalog-product-description">
+                        <a href="#" class="product-name">Гель для волос &laquo;Suavecito&raquo;</a>
+                        <p class="product-price">290 руб.</p>
+                        <a href="#" class="btn buy-accept">Купить</a>
+                    </div>
+                </div>
+                
+                <div class="catalog-product">
+                    <div class="catalog-product-image">
+                        <img src="http://placehold.it/150x100" alt="продукт">
+                    </div>
+                    <div class="catalog-product-description">
+                        <a href="#" class="product-name">Глина для укладки волос &laquo;American Crew&raquo;</a>
+                        <p class="product-price">500 руб.</p>
+                        <a href="#" class="btn buy-accept">Купить</a>
+                    </div>
+                </div>
+                
+                <div class="catalog-product">
+                    <div class="catalog-product-image">
+                        <img src="http://placehold.it/150x100" alt="продукт">
+                    </div>
+                    <div class="catalog-product-description">
+                        <a href="#" class="product-name">Гель для волос &laquo;American Crew&raquo;</a>
+                        <p class="product-price">300 руб.</p>
+                        <a href="#" class="btn buy-accept">Купить</a>
+                    </div>
+                </div>
+                
+                <div class="catalog-product">
+                    <div class="catalog-product-image">
+                        <img src="http://placehold.it/150x100" alt="продукт">
+                    </div>
+                    <div class="catalog-product-description">
+                        <a href="#" class="product-name">Набор для бритья &laquo;Baxter of Californiа&raquo;</a>
+                        <p class="product-price">3900 руб.</p>
+                        <a href="#" class="btn buy-accept">Купить</a>
+                    </div>
+                </div>
+<!--      страничная навигация в колонке с товаром          -->
+                <nav class="catalog-pagination">
+                    <ul>
+                        <li>
+                            <a href="#" class="pagination-page">1</a>
+                        </li>
+                        <li class="active-page">
+                            <a href="#" class="pagination-page">2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="pagination-page">3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="pagination-page">4</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+<!--   подвал    -->
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <section class="footer-contacts">
+                Барбершоп «Бородинский»
+                <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+                <br>
+                <a href="#">Как нас найти?</a>
+                <br>телефон: +7 (495) 666-02-66
+            </section>
+            <section class="footer-social">
+                <p>Давайте дружить!</p>
+                <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+                <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+                <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+            </section>
+            <section class="footer-copyright">
+                <p>Дизайн сайта:</p>
+                <a href="#" class="btn">htmlacademy.ru</a>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
