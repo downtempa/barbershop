@@ -7,7 +7,7 @@
     <body>
 <!--  хэдэр  -->
         <header class="main-header">
-            <div class="conteiner clearfix">
+            <div class="contаiner clearfix">
                 <nav class="main-navigation">
                     <ul>
                         <li>
@@ -36,7 +36,7 @@
             </div>
         </header>
 <!--  основной блок  -->
-        <main class="container">
+        <div class="container">
             <h1>Средства для ухода</h1>
 <!--  крошки  -->
             <nav class="breadcrumbs">
@@ -49,7 +49,7 @@
                     </li>
 <!--  нужно ли делать третий элемент ссылкой? мы через стили сделаем её неактивной?  -->
                     <li class="current-section">
-                        <a href="#">Средства для ухода</a>
+                        Средства для ухода
                     </li>
                 </ul>
             </nav>
@@ -94,8 +94,10 @@
                         </div>
                         <div class="catalog-product-description">
                             <a href="catalog-item.html" class="product-name">Набор для путешествий &laquo;Baxter of Californiа&raquo;</a>
-                            <p class="product-price">2900 руб.</p>
-                            <a href="#" class="btn buy-accept">Купить</a>
+                            <span class="product-price">
+                                2900 руб.
+                                <a href="#" class="btn buy-accept">Купить</a>
+                            </span>
                         </div>
                     </div>
 
@@ -105,8 +107,10 @@
                         </div>
                         <div class="catalog-product-description">
                             <a href="#" class="product-name">Увлажняющий кондиционер &laquo;Baxter of Californiа&raquo;</a>
-                            <p class="product-price">750 руб.</p>
-                            <a href="#" class="btn buy-accept">Купить</a>
+                            <span class="product-price">
+                                750 руб.
+                                <a href="#" class="btn buy-accept">Купить</a>
+                            </span>
                         </div>
                     </div>
 
@@ -116,8 +120,10 @@
                         </div>
                         <div class="catalog-product-description">
                             <a href="#" class="product-name">Гель для волос &laquo;Suavecito&raquo;</a>
-                            <p class="product-price">290 руб.</p>
-                            <a href="#" class="btn buy-accept">Купить</a>
+                            <span class="product-price">
+                                290 руб.
+                                <a href="#" class="btn buy-accept">Купить</a>
+                            </span>
                         </div>
                     </div>
 
@@ -127,8 +133,10 @@
                         </div>
                         <div class="catalog-product-description">
                             <a href="#" class="product-name">Глина для укладки волос &laquo;American Crew&raquo;</a>
-                            <p class="product-price">500 руб.</p>
-                            <a href="#" class="btn buy-accept">Купить</a>
+                            <span class="product-price">
+                                500 руб.
+                                <a href="#" class="btn buy-accept">Купить</a>
+                            </span>
                         </div>
                     </div>
 
@@ -138,8 +146,10 @@
                         </div>
                         <div class="catalog-product-description">
                             <a href="#" class="product-name">Гель для волос &laquo;American Crew&raquo;</a>
-                            <p class="product-price">300 руб.</p>
-                            <a href="#" class="btn buy-accept">Купить</a>
+                            <span class="product-price">
+                                300 руб.
+                                <a href="#" class="btn buy-accept">Купить</a>
+                            </span>
                         </div>
                     </div>
 
@@ -149,31 +159,33 @@
                         </div>
                         <div class="catalog-product-description">
                             <a href="#" class="product-name">Набор для бритья &laquo;Baxter of Californiа&raquo;</a>
-                            <p class="product-price">3900 руб.</p>
-                            <a href="#" class="btn buy-accept">Купить</a>
+                            <span class="product-price">
+                                3900 руб.
+                                <a href="#" class="btn buy-accept">Купить</a>
+                            </span>
                         </div>
                     </div>
 <!--  страничная навигация в колонке с товаром
       стилизовать ссылки лучше добавляя классы к li (li.class a) или к самой ссылке(a.class) ? -->
                     <nav class="catalog-pagination">
                         <ul>
-                            <li>
-                                <a href="#" class="pagination-page">1</a>
+                            <li class="pagination-page">
+                                <a href="#">1</a>
                             </li>
-                            <li class="active-page">
-                                <a href="#" class="pagination-page">2</a>
+                            <li class="pagination-page active-page">
+                                <span>2</span>
                             </li>
-                            <li>
-                                <a href="#" class="pagination-page">3</a>
+                            <li class="pagination-page">
+                                <a href="#">3</a>
                             </li>
-                            <li>
-                                <a href="#" class="pagination-page">4</a>
+                            <li class="pagination-page">
+                                <a href="#">4</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-        </main>
+        </div>
 <!--  подвал  -->
         <footer class="main-footer">
             <div class="container clearfix">

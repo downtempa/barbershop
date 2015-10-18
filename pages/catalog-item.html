@@ -8,7 +8,7 @@
     <body>
 <!--  хэдэр  -->
         <header class="main-header">
-            <div class="conteiner clearfix">
+            <div class="contаiner clearfix">
                 <nav class="main-navigation">
                     <ul>
                         <li>
@@ -37,7 +37,7 @@
             </div>
         </header>
 <!--  основной блок  -->
-        <main class="container">
+        <div class="container">
             <h1>Набор для путушествий &laquo;Baxter of Californiа&raquo;</h1>
 <!--  крошки  -->
             <nav class="breadcrumbs">
@@ -52,47 +52,38 @@
                         <a href="#">Средства для ухода</a>
                     </li>
                     <li class="current-section">
-                        <a href="index.html">Набор для путушествий &laquo;Baxter of Californiа&raquo;</a>
+                        Набор для путушествий &laquo;Baxter of Californiа&raquo;
                     </li>
                 </ul>
             </nav>
 <!--   обертка товара с изображением и описанием  -->
             <div class="item-wrapper clearfix">
-<!--  блок изображений
-    тут видимо скрипт какой-то будет, обернул сделал li>a>img  -->
+<!--  блок изображений  -->
                 <div class="item-images clearfix">
                     <div class="item-big-image">
                         <img src="http://placehold.it/150x100" alt="big-item">
                     </div>
                     <div class="item-preview-images clearfix">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                     <img src="http://placehold.it/150x100" alt="preview-item">
-                                </a>
-                            </li>
-                            <li>
-                                 <a href="#">
-                                    <img src="http://placehold.it/150x100" alt="preview-item">
-                                </a>
-                            </li>
-                            <li> 
-                                <a href="#">
-                                    <img src="http://placehold.it/150x100" alt="preview-item">
-                                </a>
-                            </li>
-                        </ul>
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" alt="preview-item">
+                        </a>
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" alt="preview-item">
+                        </a>
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" alt="preview-item">
+                        </a>
                     </div>
                 </div>
 <!--  блок с описанием  -->
-<!--  что лучше clearfix или overflow hidden?  -->
                 <div class="item-description clearfix">
                     <p>Есть в наличии</p>
                     <p class="item-article">Актикул: dexter-ae</p>
                     <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-<!--  не знаю как лучше сделать цену с кнопкой - отдельным блоком или позиционировать все отдельно?  -->
-                    <p class="product-price">750 руб.</p>
-                    <a href="#" class="btn buy-accept">Купить</a>
+                    <span class="product-price">
+                        750 руб.
+                        <a href="#" class="btn buy-accept">Купить</a>
+                    </span>
 <!--  блок с набором оставить в общем блоке или вынести с классом  -->
                     <h2>В набор входят:</h2>
                     <ul>
@@ -104,7 +95,7 @@
                     </ul>
                 </div>
             </div>
-        </main>
+        </div>
 <!--  подвал  -->
         <footer class="main-footer">
             <div class="container clearfix">
