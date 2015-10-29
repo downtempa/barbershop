@@ -99,6 +99,10 @@
                         </p>
                         <a href="#" class="btn">Как проехать</a>
                         <a href="#" class="btn">Обратная связь</a>
+                        <div class="big-map-image">
+                            <button class="closing-cross">&times;</button>
+                            <img src="#" alt="Как к нам проехать">
+                        </div>
                     </div>
                 </section>
                 <section class="content-column-right">
@@ -138,6 +142,21 @@
                 </section>
             </div>
         </footer>
+        <div class="login-popup">
+            <button class="closing-cross">&times;</button>
+            <form action="/echo" method="post">
+                <fieldset>
+                    <legend>Личный кабинет</legend>
+                    <p>Введите пожалйста свой логин и пароль</p>
+                    <input type="text" name="user-login" placeholder="Логин">
+                    <input type="password" name="user-password" placeholder="Пароль">
+                    <input type="checkbox" name="save-me" id="save-me" checked>
+                    <label for="save-me">Запомните меня</label>
+                    <a href="#">Я забыл пароль!</a>
+                    <button type="submit">Войти</button>
+                </fieldset>
+            </form>
+        </div>
     </body>
 </html>
 <!--  жалоба валидатора
