@@ -97,7 +97,38 @@ figure.gallery-content {
 .big-map-image {
     display: none;
 }
+/*каталог*/
+.catalog-search {
+    float: left;
+    
+    width: 220px;
+    
+    background-color: aqua;
+}
 
+.catalog-products {
+    float: right;
+    
+    width: 700px;
+    
+    font-size: 0;
+    background-color: aqua;
+}
+
+.catalog-product{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 220px;
+    margin-right: 20px;
+    
+    font-size: 14px;
+}
+
+.catalog-product:nth-child(3n) {
+    margin-right: 0;
+}
+/*футер*/
 .main-footer {
     background-color: #cccccc;
 }
@@ -111,7 +142,7 @@ figure.gallery-content {
     background-color: brown;
 }
 
-.footer-social{
+.footer-social {
     float: left;
     
     width: 260px;
@@ -119,7 +150,7 @@ figure.gallery-content {
     background-color: brown;
 }
 
-.footer-copyright{
+.footer-copyright {
     float: right;
     
     width: 160px;
