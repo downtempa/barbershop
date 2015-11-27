@@ -1,197 +1,250 @@
 body {
-    min-width: 960px;
-    margin: 0;
-    padding: 0;
-    
-    font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #000000;
-    font-weight: bold;
-    line-height: 24px;
-    text-transform: uppercase;
+	min-width: 960px;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	line-height: 24px;
+	text-transform: uppercase;
+	background: #000000 url("../img/main-bg-image.jpg") no-repeat;
 }
 
 .clearfix:after {
-    content: '';
-    display: table;
-    clear: both;
+	content: " ";
+	display: table;
+	clear: both;
 }
 
 .container {
-    width: 960px;
-    margin: 0 auto;
-    padding: 0 10px;
-    
-    background-color: dimgrey;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+	/*    background-color: dimgrey;*/
 }
 
 h1 {
-    font-size: 30px;
+	font-size: 30px;
 }
 
 h2 {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 .main-header {
-    background-color: #cccccc;
+	background-color: #000000;
 }
 
 .main-navigation {
-    float: left;
-    
-    width: 780px;
-    
-    background-color: aqua;
+	float: left;
+	width: 780px;
+	font-size: 0;
+}
+
+.main-navigation a {
+	position: relative;
+	display: block;
+	padding: 29px 21px;
+	font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.main-navigation a:hover,
+.user-block a:hover {
+	background-color: #242424;
+}
+
+.main-navigation ul {
+	padding: 0;
+	margin: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+	/*	margin-right: 20px;*/
 }
 
 .user-block {
-    float: right;
-    
-    width: 107px;
-    max-width: 160px;
-    
-    background-color: cornflowerblue;
+	float: right;
+	width: 107px;
+	max-width: 160px;
+	/*    background-color: cornflowerblue;*/
+}
+
+.user-block a::before {
+	position: absolute;
+	top: 39%;
+	left: 12%;
+	content: " ";
+	width: 24px;
+	height: 24px;
+	background: url("../img/barbershop-styleguide-icon-sprite.png") no-repeat 100% 0%;
+}
+
+.user-block a {
+	position: relative;
+	display: block;
+	padding: 29px 0px 29px 50px;
+	font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.user-block a:hover::before {
+	background: url("../img/barbershop-styleguide-icon-sprite.png") no-repeat 100% 100%;
+}
+
+.active a:after {
+	content: " ";
+	position: absolute;
+	bottom: 0;
+	left: 21px;
+	right: 21px;
+	height: 4px;
+	background-color: #ffffff;
+}
+
+.active a:hover {
+	background: none;
 }
 
 .logo {
-    width: 368px;
-    height: 162px;
-    margin: 0 auto;
-    
-    background-color: aquamarine;
+	width: 368px;
+	height: 162px;
+	margin: 0 auto;
+	/*    background-color: aquamarine;*/
 }
 
 .features-item {
-    float: left;
-    
-    width: 300px;
-    margin-right: 30px;
-    
-    background-color: darkturquoise;
+	float: left;
+	width: 300px;
+	margin-right: 30px;
+	/*    background-color: darkturquoise;*/
 }
 
 .features-item:last-child {
-    margin-right: 0px
+	margin-right: 0px
 }
 
 .index-content {
-    margin-bottom: 20px;
-    padding: 0 30px;
+	margin-bottom: 20px;
+	padding: 0 30px;
 }
 
 .content-column-left {
-    float: left;
-    
-    width: 380px;
-    
-    background-color: firebrick;
+	float: left;
+	width: 380px;
+	/*    background-color: firebrick;*/
+}
+
+.modal-map {
+	display: none;
 }
 
 .content-column-right {
-    float: right;
-    
-    width: 300px;
-    
-    background-color: firebrick;
+	float: right;
+	width: 300px;
+	/*    background-color: firebrick;*/
 }
 
 figure.gallery-content {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .big-map-image {
-    display: none;
+	display: none;
 }
+
 
 /*каталог*/
 
 .catalog-search {
-    float: left;
-    
-    width: 220px;
-    
-    background-color: aqua;
+	float: left;
+	width: 220px;
+	background-color: aqua;
 }
 
 .catalog-products {
-    float: right;
-    
-    width: 700px;
-    
-    font-size: 0;
-    
-    background-color: aqua;
+	float: right;
+	width: 700px;
+	font-size: 0;
+	/*    background-color: aqua;*/
 }
 
 .catalog-product {
-    display: inline-block;
-    vertical-align: top;
-    
-    width: 220px;
-    margin-right: 20px;
-    
-    font-size: 14px;
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	margin-right: 20px;
+	font-size: 14px;
 }
 
 .catalog-product:nth-child(3n) {
-    margin-right: 0;
+	margin-right: 0;
 }
+
 
 /*предмет каталога*/
 
 .item-images {
-    float: left;
-    
-    width: 460px;
-    
-    font-size: 0;
+	float: left;
+	width: 460px;
+	font-size: 0;
 }
 
 .item-description {
-    float: right;
-    
-    width: 400px;
+	float: right;
+	width: 400px;
 }
+
 .item-preview-images a {
-    display: inline-block;
-    vertical-align: top;
-    
-    margin-right: 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
 }
 
 .item-preview-images a:last-child {
-    margin-right: 0;
+	margin-right: 0;
 }
+
 
 /*футер*/
 
 .main-footer {
-    background-color: #cccccc;
+	background-color: #cccccc;
 }
 
 .footer-contacts {
-    float: left;
-    
-    width: 320px;
-    margin-right: 60px;
-    
-    background-color: brown;
+	float: left;
+	width: 320px;
+	margin-right: 60px;
+	/*    background-color: brown;*/
 }
 
 .footer-social {
-    float: left;
-    
-    width: 260px;
-    
-    background-color: brown;
+	float: left;
+	width: 260px;
+	/*    background-color: brown;*/
 }
 
 .footer-copyright {
-    float: right;
-    
-    width: 160px;
-    
-    background-color: brown;
+	float: right;
+	width: 160px;
+	/*    background-color: brown;*/
+}
+
+.login-popup {
+	display: none;
 }
