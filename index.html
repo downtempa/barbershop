@@ -77,7 +77,7 @@
 				<a href="#" class="btn">Все новости</a>
 			</section>
 			<section class="content-column-right">
-				<h2 class="content-column-title">Фотогалерея</h2>
+				<h2 class="content-column-title gallery-title">Фотогалерея</h2>
 				<div class="gallery">
 					<figure class="gallery-content">
 						<img src="img/gallery-photo-1.jpg" width="286" height="164" alt="Барбершоп итерьер">
@@ -88,7 +88,7 @@
 			</section>
 		</div>
 
-		<div class="index-content clearfix">
+		<div class="index-content clearfix ">
 			<section class="content-column-left">
 				<div class="main-contacts">
 					<h2 class="content-column-title">Контактная информация</h2>
@@ -102,23 +102,20 @@
 						<br>пн — пт: с 10:00 до 22:00
 						<br>сб — вс: с 10:00 до 19:00
 					</p>
-					<a href="#" class="btn">Как проехать</a>
+					<a href="#" class="btn open-modal-map">Как проехать</a>
 					<a href="#" class="btn">Обратная связь</a>
-					<div class="big-map-image">
-						<button class="closing-cross">&times;</button>
-						<img src="img/big-map-image.jpg" width="767" height="561" alt="Как к нам проехать">
+					<div class="modal-map">
+						<button class="closing-cross closing-map"></button>
+						<!--						<img src="img/big-map-image.jpg" width="767" height="561" alt="Как к нам проехать">-->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1448814733098" width="767" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 				<div class="company-info-action">
-					<div class="modal-map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7516361114067!2d30.31810003127109!3d59.938747285514545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1447366633626" width="940" height="446" style="border:0" allowfullscreen></iframe>
-						<button class="closing-cross closing-map">&times;</button>
-					</div>
 				</div>
 			</section>
 			<section class="content-column-right">
 				<div class="appointment-form">
-					<h2 class="content-column-title">Записаться</h2>
+					<h2 class="content-column-title ">Записаться</h2>
 					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 					<form action="/echo" method="post">
 						<input type="text" name="date" value="" placeholder="Дата">
@@ -154,7 +151,7 @@
 		</div>
 	</footer>
 	<div class="login-popup">
-		<button class="closing-cross">&times;</button>
+		<button class="closing-cross popup-close"></button>
 		<form action="/echo" method="post">
 			<fieldset>
 				<legend>Личный кабинет</legend>
@@ -163,15 +160,12 @@
 				<input type="password" name="user-password" placeholder="Пароль">
 				<input type="checkbox" name="save-me" id="save-me" checked>
 				<label for="save-me">Запомните меня</label>
-				<a href="#">Я забыл пароль!</a>
-				<button type="submit">Войти</button>
+				<a class="forgot-password" href="#">Я забыл пароль!</a>
+				<button type="submit" class="btn">Войти</button>
 			</fieldset>
 		</form>
 	</div>
+	<script src="js/modal-windows.js" charset="utf-8"></script>
 </body>
 
 </html>
-<!--  жалоба валидатора
-Error: Attribute placeholder is only allowed when the input type is email, number, password, search, tel, text, or url.
-плэйсхолдер для даты и времени недопустим пишет
-warning на section без заголовков и на новые тэги(data time) -->
