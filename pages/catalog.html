@@ -23,7 +23,7 @@
                             <a href="#">Новости</a>
                         </li>
                         <li>
-                            <a href="#">Прайс-лист</a>
+                            <a href="barbershop-price.html">Прайс-лист</a>
                         </li>
                         <li class="active">
                             <a href="catalog.html">Магазин</a>
@@ -107,7 +107,7 @@
                        </li>
                         </ul>
                         <button type="submit" class="btn catalog-search-btn">Показать</button>
-                        
+
                     </form>
                 </div>
 <!--  колонка с товаром  -->
@@ -116,10 +116,10 @@
       отступ в цене стилизуем?  -->
                     <div class="catalog-product">
                         <div class="catalog-product-image">
-							<a href="#"><img src="../img/baxter-travel-set.jpg" width="220" height="165" alt="продукт"></a>
+							<a href="catalog-item.html"><img src="../img/baxter-travel-set.jpg" width="220" height="165" alt="продукт"></a>
                         </div>
                         <div class="catalog-product-description">
-                            <a href="catalog-item.html" class="product-name">Набор для путешествий 
+                            <a href="catalog-item.html" class="product-name">Набор для путешествий
                             <br><span>&laquo;Baxter of Californiа&raquo;</span></a>
                             <div class="product-price">
                                 2900 руб.
@@ -133,7 +133,7 @@
 							<a href="#"><img src="../img/baxter-conditioner.jpg" width="220" height="165" alt="продукт"></a>
                         </div>
                         <div class="catalog-product-description">
-                            <a href="#" class="product-name">Увлажняющий кондиционер 
+                            <a href="#" class="product-name">Увлажняющий кондиционер
                             <br><span>&laquo;Baxter of Californiа&raquo;</span></a>
                             <div class="product-price">
                                 750 руб.
@@ -147,7 +147,7 @@
 							<a href="#"><img src="../img/suavecito-hair-gel.jpg" width="220" height="165" alt="продукт"></a>
                         </div>
                         <div class="catalog-product-description">
-                            <a href="#" class="product-name">Гель для волос 
+                            <a href="#" class="product-name">Гель для волос
                             <br><span>&laquo;Suavecito&raquo;</span></a>
                             <div class="product-price">
                                 290 руб.
@@ -161,7 +161,7 @@
 							<a href="#"><img src="../img/american-crew-clay.jpg" width="220" height="165" alt="продукт"></a>
                         </div>
                         <div class="catalog-product-description">
-                            <a href="#" class="product-name">Глина для укладки волос 
+                            <a href="#" class="product-name">Глина для укладки волос
                             <br><span>&laquo;American Crew&raquo;<span></a>
                             <div class="product-price">
                                 500 руб.
@@ -175,7 +175,7 @@
 							<a href="#"><img src="../img/american-crew-hair-gel.jpg" width="220" height="165" alt="продукт"></a>
                         </div>
                         <div class="catalog-product-description">
-                            <a href="#" class="product-name">Гель для волос 
+                            <a href="#" class="product-name">Гель для волос
                             <br><span>&laquo;American Crew&raquo;<span></a>
                             <div class="product-price">
                                 300 руб.
@@ -189,7 +189,7 @@
 							<a href="#"><img src="../img/baxter-shaving-kit.jpg" width="220" height="165" alt="продукт"></a>
                         </div>
                         <div class="catalog-product-description">
-                            <a href="#" class="product-name">Набор для бритья 
+                            <a href="#" class="product-name">Набор для бритья
                             <br><span>&laquo;Baxter of Californiа&raquo;</span>
                             <div class="product-price">
                                 3900 руб.
@@ -223,7 +223,7 @@
             <div class="container clearfix">
                 <section class="footer-contacts">
                     Барбершоп «Бородинский»
-                    <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+                    <br>Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     <br>
                     <a href="#">Как нас найти?</a>
                     <br>телефон: +7 (495) 666-02-66
@@ -236,9 +236,25 @@
                 </section>
                 <section class="footer-copyright">
                     <p>Дизайн сайта:</p>
-                    <a href="#" class="btn">htmlacademy.ru</a>
+                    <a href="https://htmlacademy.ru/" class="btn">htmlacademy.ru</a>
                 </section>
             </div>
         </footer>
+        <div class="login-popup">
+    		<button class="closing-cross popup-close"></button>
+    		<form action="/echo" method="post">
+    			<fieldset>
+    				<legend>Личный кабинет</legend>
+    				<p>Введите пожалйста свой логин и пароль</p>
+    				<input type="text" name="user-login" placeholder="Логин">
+    				<input type="password" name="user-password" placeholder="Пароль">
+    				<input type="checkbox" name="save-me" id="save-me" checked>
+    				<label for="save-me">Запомните меня</label>
+    				<a class="forgot-password" href="#">Я забыл пароль!</a>
+    				<button type="submit" class="btn">Войти</button>
+    			</fieldset>
+    		</form>
+    	</div>
+        <script src="../js/modal-windows.js" charset="utf-8"></script>
     </body>
 </html>

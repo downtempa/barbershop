@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Прайс-лист</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="price-list">
+	<!--  хэдэр  -->
+	<header class="main-header">
+		<div class="container clearfix">
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="../index.html">Главная</a>
+					</li>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li class="active">
+						<a href="#">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="catalog.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a href="#" class="login">Вход</a>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<h1>Прайс-лист</h1>
+		<!--  крошки  -->
+		<nav class="breadcrumbs">
+			<ul>
+				<li>
+					<a href="../index.html">Главная</a>
+				</li>
+				<li class="current-section">
+					Прайс-лист
+				</li>
+			</ul>
+		</nav>
+		<div class="price-page-main-title">
+			<h1 class="price-list-big-title">ИСТИННО МУЖСКАЯ КЛАССИКА</h1>
+		</div>
+		<div class="means-used">
+			<h2>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h2>
+			<ul class="means-used-list">
+				<li>Baxter of California</li>
+				<li>Mr Natty</li>
+				<li>Suavecito</li>
+				<li>Malin+Goetz</li>
+			</ul>
+		</div>
+		<div class="prices-masters">
+			<h2>ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h2>
+			<table>
+				<tr>
+					<td>Стрижка</td>
+					<td>1500 Р.</td>
+				</tr>
+				<tr>
+					<td>Стрижка бороды</td>
+					<td>500 Р.</td>
+				</tr>
+				<tr>
+					<td>Накрутка усов</td>
+					<td>350 Р.</td>
+				</tr>
+			</table>
+		</div>
+		<div class="about-us clearfix">
+		<h2>Несколько слов о нас:</h2>
+			<div class="about-us-left-col">
+				<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+			</div>
+			<div class="about-us-right-col">
+				<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+			</div>
+		</div>
+	</div>
+
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<section class="footer-contacts">
+				Барбершоп «Бородинский»
+				<br>Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+				<br>
+				<a href="#">Как нас найти?</a>
+				<br>телефон: +7 (495) 666-02-66
+			</section>
+			<section class="footer-social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social-btn social-btn-vk"></a>
+				<a href="#" class="social-btn social-btn-fb"></a>
+				<a href="#" class="social-btn social-btn-inst"></a>
+			</section>
+			<section class="footer-copyright">
+				<p>Дизайн сайта:</p>
+				<a href="https://htmlacademy.ru/" class="btn">htmlacademy.ru</a>
+			</section>
+		</div>
+	</footer>
+	<div class="login-popup">
+		<button class="closing-cross popup-close"></button>
+		<form action="/echo" method="post">
+			<fieldset>
+				<legend>Личный кабинет</legend>
+				<p>Введите пожалйста свой логин и пароль</p>
+				<input type="text" name="user-login" placeholder="Логин">
+				<input type="password" name="user-password" placeholder="Пароль">
+				<input type="checkbox" name="save-me" id="save-me" checked>
+				<label for="save-me">Запомните меня</label>
+				<a class="forgot-password" href="#">Я забыл пароль!</a>
+				<button type="submit" class="btn">Войти</button>
+			</fieldset>
+		</form>
+	</div>
+	<script src="../js/modal-windows.js" charset="utf-8"></script>
+</body>
+
+</html>

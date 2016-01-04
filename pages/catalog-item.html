@@ -2,13 +2,13 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Набор для путушествий &laquo;Baxter of Californiа&raquo;</title>
+        <title>Набор для путешествий &laquo;Baxter of Californiа&raquo;</title>
         <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/style.css">
     </head>
 
-    <body>
+    <body class="catalog-item-page">
 <!--  хэдэр  -->
         <header class="main-header">
             <div class="container clearfix">
@@ -24,7 +24,7 @@
                             <a href="#">Новости</a>
                         </li>
                         <li>
-                            <a href="#">Прайс-лист</a>
+                            <a href="barbershop-price.html">Прайс-лист</a>
                         </li>
                         <li class="active">
                             <a href="catalog.html">Магазин</a>
@@ -41,15 +41,15 @@
         </header>
 <!--  основной блок  -->
         <div class="container">
-            <h1>Набор для путушествий &laquo;Baxter of Californiа&raquo;</h1>
+            <h1>Набор для путешествий &laquo;Baxter of Californiа&raquo;</h1>
 <!--  крошки  -->
             <nav class="breadcrumbs">
                 <ul>
                     <li>
-                        <a href="index.html">Главная</a>
+                        <a href="../index.html">Главная</a>
                     </li>
                     <li>
-                        <a href="#">Магазин</a>
+                        <a href="catalog.html">Магазин</a>
                     </li>
                     <li>
                         <a href="#">Средства для ухода</a>
@@ -74,16 +74,16 @@
                 </div>
 <!--  блок с описанием  -->
                 <div class="item-description clearfix">
-                    <div class="item-description-detail"> 
+                    <div class="item-description-detail">
                         <p>Есть в наличии</p>
                         <p class="item-article">Актикул: dexter-ae</p>
-                        <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+                        <p class="catalog-item-description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
                         <span class="product-price">
-                            750 руб.
+                            2900 руб.
                             <a href="#" class="btn buy-accept">Купить</a>
                         </span>
                     </div>
-                    <div class="item-description-contents">  
+                    <div class="item-description-contents">
                         <h2>В набор входят:</h2>
                         <ul>
                             <li>Средство для умывания (50 мл)</li>
@@ -92,7 +92,7 @@
                             <li>Крем после бритья, шампунь (50 мл)</li>
                             <li>Удобная кожаная косметичка</li>
                         </ul>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,22 +101,38 @@
             <div class="container clearfix">
                 <section class="footer-contacts">
                     Барбершоп «Бородинский»
-                    <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+                    <br>Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     <br>
                     <a href="#">Как нас найти?</a>
                     <br>телефон: +7 (495) 666-02-66
                 </section>
                 <section class="footer-social">
                     <p>Давайте дружить!</p>
-                    <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-                    <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-                    <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+                    <a href="#" class="social-btn social-btn-vk"></a>
+                    <a href="#" class="social-btn social-btn-fb"></a>
+                    <a href="#" class="social-btn social-btn-inst"></a>
                 </section>
                 <section class="footer-copyright">
                     <p>Дизайн сайта:</p>
-                    <a href="#" class="btn">htmlacademy.ru</a>
+                    <a href="https://htmlacademy.ru/" class="btn">htmlacademy.ru</a>
                 </section>
             </div>
         </footer>
+        <div class="login-popup">
+    		<button class="closing-cross popup-close"></button>
+    		<form action="/echo" method="post">
+    			<fieldset>
+    				<legend>Личный кабинет</legend>
+    				<p>Введите пожалйста свой логин и пароль</p>
+    				<input type="text" name="user-login" placeholder="Логин">
+    				<input type="password" name="user-password" placeholder="Пароль">
+    				<input type="checkbox" name="save-me" id="save-me" checked>
+    				<label for="save-me">Запомните меня</label>
+    				<a class="forgot-password" href="#">Я забыл пароль!</a>
+    				<button type="submit" class="btn">Войти</button>
+    			</fieldset>
+    		</form>
+    	</div>
+        <script src="../js/modal-windows.js" charset="utf-8"></script>
     </body>
-</html>   
+</html>
